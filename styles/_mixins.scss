@@ -1,0 +1,49 @@
+@mixin text-style($font, $weight) {
+    font-size: $font;
+    font-weight: $weight;
+}
+
+@mixin link-style($width, $height) {
+    font-weight: 600;
+    display: block;
+    width: $width;
+    height: $height;
+    border: 2px solid;
+    border-radius: 30px;
+    line-height: $height;
+}
+
+@mixin stiker-style($content, $bg-color) {
+    content: $content;
+    width: 58px;
+    height: 58px;
+    background-color: $bg-color;
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    left: -29px;
+    color: #FFF;
+    text-align: center;
+    line-height: 58px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+@mixin stiker-1024-style {
+    font-size: 0.6rem;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    top: -23px;
+    left: -23px;
+}
+
+@mixin stiker-768-style {
+    font-size: 0.7rem;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    top: -28px;
+    left: -28px; 
+}

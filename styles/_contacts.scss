@@ -1,0 +1,35 @@
+.contacts {
+    background-color: #262626;
+    text-align: center;
+    position: relative;
+
+    &__headline {
+        color: $secondary-color;
+        font-size: 3.25rem;
+    }
+
+    &__description {
+        color: #B1B1B1;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts__headline {
+        font-size: 2.5rem;
+    }
+    .contacts__description {
+        font-size: 1rem;
+        margin-bottom: 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__headline {
+        font-size: 2rem;
+    }
+    .contacts__description {
+        font-size: .9rem;
+        margin-bottom: 35px;
+    }
+}

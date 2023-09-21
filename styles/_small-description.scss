@@ -1,0 +1,17 @@
+.small-description {
+    @include text-style(1.25rem, 300);
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .small-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .small-description {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,36 @@
+.link {
+    @include link-style(312px, 60px);
+    @include text-style(1rem, 700);
+    margin: 60px auto 0;
+    transition: all .4s;
+
+    &:hover {
+        background-color: #FFA60D;
+        border-color: #FFA60D;
+    }
+
+    &--black-transparent:hover {
+        color: $secondary-color;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        @include link-style(248px, 48px);
+        font-size: .85rem;
+
+        &--white-transparent {
+            margin: 63px auto 0;
+        }
+
+        &--black-transparent {
+            margin: 45px auto 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .link--white-transparent {
+            margin: 66px auto 0;
+    }
+}

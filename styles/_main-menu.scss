@@ -1,0 +1,45 @@
+.main-menu {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    
+    &__item {
+        transition: color .4s;
+    
+        &:hover {
+            color: #FFA60D;
+        }
+
+        &:not(:last-child)::after {
+            content: "";
+            margin: 0 25px;
+            display: inline-block;
+            background-color: #D8D5D5;
+            width: 1.5px;
+            height: 16px;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-menu {
+        font-size: .9rem;
+
+        &__item:not(:last-child)::after {
+            height: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-menu {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-menu__item:not(:last-child)::after {
+        margin: 0 15px;
+    }
+}

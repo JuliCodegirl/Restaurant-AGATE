@@ -1,0 +1,38 @@
+.chief-cooker {
+    &__photo {
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+            max-width: 398px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chief-cooker {
+        img {
+            max-width: 282px;
+        }
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .chief-cooker {
+        &__photo {
+            margin-bottom: 20px;
+    
+            img {
+                max-width: 251px;
+            }
+        }
+    
+        &__description {
+            margin-bottom: 20px;
+        }
+    }
+}

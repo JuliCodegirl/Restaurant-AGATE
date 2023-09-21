@@ -1,0 +1,43 @@
+.banner {
+    background-color: rgba(0, 0, 0, .42);
+    padding: 218px 0 185px;
+
+    &__headline {
+        font-size: 4.25rem;
+        letter-spacing: .07em;
+        max-width: 920px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        line-height: 122%;
+    }
+
+    &__description {
+        margin-top: 35px;
+        @include text-style(1.25rem, 400);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        padding: 183px 0 153px;
+
+        &__headline {
+            font-size: 3rem;
+        }
+
+        &__description {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 171px 0 99px;
+
+        &__headline {
+            font-size: 2.5rem;
+            max-width: 329px;
+        }
+    }
+}

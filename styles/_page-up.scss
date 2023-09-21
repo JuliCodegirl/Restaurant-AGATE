@@ -1,0 +1,25 @@
+.page-up {
+    background-color: #FFAC1C;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 19px;
+    right: 20px;
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-5px);
+        opacity: .8;
+    }
+
+    &::before {
+    content: "";
+    color: $secondary-color;
+    width: 28px;
+    height: 12.73px;
+    display: block;
+    background-image: url(../icons/arrow.svg);
+    margin: calc(50% - 12.73px/2) auto 0;
+    }
+}

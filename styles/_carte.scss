@@ -1,0 +1,23 @@
+.carte {
+    padding-top: 0;
+
+    &__description {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .carte__description {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carte {
+        padding-left: 52px;
+    }
+    
+    .carte__description {
+        margin-bottom: 58px;
+    }
+}
